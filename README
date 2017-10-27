@@ -1,0 +1,15 @@
+Post Eltako enOcean Temp/Humi/Volt datagrams to openSenseMap
+
+This repository contains an Arduino sketch for posting Eltako enOcean datagrams
+to openSenseMap.
+
+Hardware:
+Wemos D1 mini
+enOcean Pi
+
+Pin connections:
+enOceanPi < --- > Wemos D1 mini
+   Vcc    < --- > 3.3
+   Gnd    < --- > Gnd
+   TX     < --- > D7
+   RX     < --- > D6
