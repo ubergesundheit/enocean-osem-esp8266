@@ -132,6 +132,9 @@ uint8_t decodeRxBuffer() {
 }
 
 void loop() {
+  if (WiFi.status() != WL_CONNECTED) {
+    ESP.reset();
+  }
   while (swSer.available() > 0) {
     // wait for sync byte
     if (swSer.read() == 0x55) {
